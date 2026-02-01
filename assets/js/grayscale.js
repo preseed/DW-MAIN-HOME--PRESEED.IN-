@@ -1,10 +1,19 @@
+/**
+ * File: grayscale.js
+ * Purpose: Custom scroll and navigation behavior for the root Preseed landing page.
+ * Extends: Start Bootstrap - Grayscale Theme.
+ * Dependencies: jQuery, Google Maps API (optional).
+ */
+
 /*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-// jQuery to collapse the navbar on scroll
+/**
+ * Collapses the navbar on scroll if the offset is greater than 50 pixels.
+ */
 function collapseNavbar() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
@@ -42,6 +51,9 @@ google.maps.event.addDomListener(window, 'resize', function() {
     map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
 });
 
+/**
+ * Initializes the Google Map with custom styles and markers.
+ */
 function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions

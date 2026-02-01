@@ -1,3 +1,9 @@
+/**
+ * File: startups/assets/js/application.js
+ * Purpose: UI interactions, scrollspy, and affix behavior for the startups sub-site.
+ * Dependencies: jQuery, Bootstrap JavaScript components.
+ */
+
 // NOTICE!! DO NOT USE ANY OF THIS JAVASCRIPT
 // IT'S ALL JUST JUNK FOR OUR DOCS!
 // ++++++++++++++++++++++++++++++++++++++++++
@@ -10,6 +16,10 @@
  */
 
 
+/**
+ * Main application logic for startups sub-site UI components.
+ * Initializes scrollspy, sidebar affix, tooltips, and popovers.
+ */
 !function ($) {
 
   $(function(){
